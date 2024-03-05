@@ -39,7 +39,8 @@ function Home() {
             Shop
           </Button>
         </div>
-        <div className="lg:col-span-1 lg:block sm:hidden bg-[url('/images/home3.jpg')] bg-cover bg-no-repeat h-[300px]"></div>
+        <div className="lg:col-span-1 sm:hidden lg:block md:bg-[url('/images/home3.jpg')] bg-cover bg-no-repeat h-[300px]">
+        </div>
       </div>
       <div className="sm:w-full sm:p-8 md:p-12 text-white sm:text-xl md:text-2xl lg:text-3xl bg-black">
         <div className="sm:w-[400px] md:w-[600px] lg:w-[800px] mx-auto flex justify-around">
