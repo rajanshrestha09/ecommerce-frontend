@@ -4,6 +4,7 @@ import Categories from "./Categories"
 import ProductList from "./ProductList"
 import ProductDetails from "./ProductDetails";
 import Login from "./Login";
+import Signup from "./Signup";
 
 export {
     Home,
@@ -11,5 +12,6 @@ export {
     Categories,
     ProductList,
     ProductDetails,
-    Login
+    Login,
+    Signup
 }

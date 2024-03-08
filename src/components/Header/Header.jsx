@@ -29,7 +29,7 @@ function Header() {
           <div className="text-3xl font-bold text-amber-700">Good Shop</div>
         </Link>
         <div className="hidden lg:flex">
-          <Input />
+          <Input className="w-full"/>
           <Button className="ms-2 w-12 rounded-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"

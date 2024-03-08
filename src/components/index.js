@@ -8,6 +8,8 @@ import CardCategory from "./CardCategory";
 import ProductComponent from "./ProductComponent";
 import ProductDetailComponent from "./ProductDetailComponent";
 import CartComponent from "./CartComponent";
+import LoginCompnent from "./LoginCompnent";
+import SignupComponent from "./SignupComponent"
 
 export{
     Header,
@@ -19,5 +21,7 @@ export{
     CardCategory,
     ProductComponent,
     ProductDetailComponent,
-    CartComponent
+    CartComponent,
+    LoginCompnent,
+    SignupComponent
 }

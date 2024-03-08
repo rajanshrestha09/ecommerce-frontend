@@ -1,8 +1,11 @@
 import React from 'react'
+import { LoginCompnent } from '../components'
 
 function Login() {
   return (
-    <div className='text-yellow-400 text-center my-8 text-2xl'>Login Page Under Construction</div>
+    <div className=''>
+      <LoginCompnent />
+    </div>
   )
 }
 

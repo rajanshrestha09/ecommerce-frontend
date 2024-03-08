@@ -3,50 +3,53 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import {Home, Cart, Categories, ProductList, ProductDetails, Login} from "./pages"
+
+import {
+  Home,
+  Cart,
+  Categories,
+  ProductList,
+  ProductDetails,
+  Login,
+  Signup,
+} from "./pages";
 
 const router = createBrowserRouter([
   {
-    path:"/",
+    path: "/",
     element: <App />,
     children: [
       {
-        path:"/",
-        element: <Home />
+        path: "/",
+        element: <Home />,
       },
       {
         path: "/categories",
-        element: (
-                <Categories />
-        ),
+        element: <Categories />,
       },
       {
         path: "/productList",
-        element: (
-                <ProductList />
-        ),
+        element: <ProductList />,
       },
       {
         path: "/cart",
-        element: (
-                <Cart />
-        ),
+        element: <Cart />,
       },
       {
         path: "/productdetails/:id",
-        element: (
-                <ProductDetails />
-        ),
+        element: <ProductDetails />,
       },
       {
         path: "/login",
-        element: (
-                <Login />
-        ),
-      }
-    ]
-  }
-])
+        element: <Login />,
+      },
+      {
+        path: "/signup",
+        element: <Signup />,
+      },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
