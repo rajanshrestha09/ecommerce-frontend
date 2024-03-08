@@ -28,9 +28,9 @@ function Header() {
         <Link to="/">
           <div className="text-3xl font-bold text-amber-700">Good Shop</div>
         </Link>
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex items-center border-none">
           <Input className="w-full"/>
-          <Button className="ms-2 w-12 rounded-lg">
+          <Button className="ms-1 w-10 rounded-sm">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"

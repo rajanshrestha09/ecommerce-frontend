@@ -1,5 +1,5 @@
-import React from 'react'
-import { Input,Button } from "./index";
+import React from "react";
+import { Input, Button } from "./index";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 
@@ -34,29 +34,31 @@ function SignupComponent() {
             <Input
               label="Fullname"
               {...register("user")}
-              className="my-1 mx-2 "
+              className="my-2 mx-2 rounded-sm "
             />
             <Input
               label="Username"
               {...register("user")}
-              className="my-1 mx-2 "
+              className="my-2 mx-2 rounded-sm "
             />
-                        <Input
+            <Input
               label="Email"
               {...register("user")}
-              className="my-1 mx-2 "
+              className="my-2 mx-2 rounded-sm "
             />
             <Input
               label="Password"
               {...register("user")}
-              className="my-1 mx-2"
+              className="my-2 mx-2 rounded-sm"
             />
-            <Button className="my-4 h-8 uppercase font-medium text-base">Signup</Button>
+            <Button className="my-4 h-8 uppercase font-medium text-base">
+              Signup
+            </Button>
           </form>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default SignupComponent
+export default SignupComponent;

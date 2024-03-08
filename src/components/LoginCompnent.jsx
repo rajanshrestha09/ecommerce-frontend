@@ -34,12 +34,12 @@ function LoginCompnent() {
             <Input
               label="Username/Email"
               {...register("user")}
-              className="my-1 mx-2 "
+              className="my-3 mx-2 rounded-sm"
             />
             <Input
               label="Password"
               {...register("user")}
-              className="my-1 mx-2"
+              className="my-3 mx-2 rounded-sm"
             />
             <Button className="my-4 h-8 uppercase font-medium text-base">Login</Button>
           </form>
