@@ -25,7 +25,9 @@ function Header() {
   return (
     <header className="flex flex-col text-white mx-2 my-1">
       <div className="flex flex-row sm:justify-between lg:justify-around items-center p-1 mt-2">
-        <div className="text-3xl font-bold text-amber-700">Good Shop</div>
+        <Link to="/">
+          <div className="text-3xl font-bold text-amber-700">Good Shop</div>
+        </Link>
         <div className="hidden lg:flex">
           <Input />
           <Button className="ms-2 w-12 rounded-lg">
@@ -49,6 +51,7 @@ function Header() {
               width="25px"
               height="25px"
               fill="white"
+              className="hover:fill-amber-700"
             >
               <path
                 d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 
@@ -59,13 +62,19 @@ function Header() {
               />
             </svg>
           </div>
-          <div className="mx-2" onClick={()=>{navigate("/cart")}}>
+          <div
+            className="mx-2"
+            onClick={() => {
+              navigate("/cart");
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 576 512"
               width="25px"
               height="25px"
               fill="white"
+              className="hover:fill-amber-700"
             >
               <path
                 d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 
@@ -77,7 +86,7 @@ function Header() {
               />
             </svg>
           </div>
-          <Button className="px-2 py-1 ms-4 rounded-lg w-20 text-amber-700 hover:bg-black hover:text-amber-500 ">
+          <Button className="px-2 py-1 ms-4 rounded-lg w-20 text-amber-700 hover:bg-black hover:text-amber-500" onClick={()=>navigate("/login")}>
             Login
           </Button>
         </div>
@@ -99,7 +108,7 @@ function Header() {
               </li>
             ) : null
           )}
-          <li ></li>
+          <li></li>
         </ul>
         <div className="sm:block md:hidden">
           <svg
